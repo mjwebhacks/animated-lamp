@@ -3,16 +3,16 @@ import os
 
 class Config:
 
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    API_ID = 3796974
+    API_HASH = "9511d0112631f9990337eb724d1a7d0d"
+    BOT_TOKEN = "5392802848:AAEKmK2Qfxdg5v3t46DzgQGhkT5JvMgfOeI"
     SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-    DATABASE_URL = os.environ.get("DATABASE_URL")
-    AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")]
+    LOG_CHANNEL = -1001771465683
+    DATABASE_URL = "mongodb+srv://mjfreeflix:Manya004@cluster0.9oay3.mongodb.net/screenshots?retryWrites=true&w=majority"
+    AUTH_USERS = [int(i) for i in os.environ.get("1464063686").split(" ")]
     MAX_PROCESSES_PER_USER = int(os.environ.get("MAX_PROCESSES_PER_USER", 2))
     MAX_TRIM_DURATION = int(os.environ.get("MAX_TRIM_DURATION", 600))
-    TRACK_CHANNEL = int(os.environ.get("TRACK_CHANNEL", False))
+    TRACK_CHANNEL = -1001771465683
     SLOW_SPEED_DELAY = int(os.environ.get("SLOW_SPEED_DELAY", 5))
     HOST = os.environ.get("HOST", "")
     TIMEOUT = int(os.environ.get("TIMEOUT", 60 * 30))
